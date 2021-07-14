@@ -1,0 +1,24 @@
+<html>
+ <script>
+  var myBtn = document.getElementById('myButton');
+  //add event listener
+  myBtn.addEventListener('click', function(event) {
+    window.location.href='+http://edgis.org/badge/+'form1.box1.value+'.png','frame2';
+  });
+</script>
+<body> 
+<font face="arial">
+ <h1>Badge Pickup</h1>
+
+Search for your ArcGIS Online Organization <br />
+ 
+<br />
+<form name="form1">
+<input type="text" id="box1" name="name" onkeydown = "if (event.keyCode == 13) document.getElementById('myButton').click()"/>
+<input type='button' id="myButton" value="Go" onclick="javascript:window.location.href=form1.box1.value;"/>
+ </form>
+<br /><br />
+
+
+ </body>
+ </html>
