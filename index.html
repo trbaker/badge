@@ -19,14 +19,12 @@ function function1() {
 		<br><br>
 Enter your secret word in the form to retrieve your badge. The badge should appear in the box below. Save your badge (.png) by right-clicking it. Badges will be deleted
 		48 hours after they are generated.
-		. 
-	
 		<br /><br />GIS Name Badge Generator: <a href="http://esriurl.com/namebadge" target="new">http://esriurl.com/namebadge</a><br>
 </div>
 <table width=700><tr><td>		
 <hr size=1 noshade width='300'>
 <center>
-	<form name="form1" onSubmit="return function1();">
+	<form name="form1" onSubmit="javascript:function1();">
 secret word: <input type="text" id="box1" name="box1" onkeydown = "if (event.keyCode == 13) document.getElementById('myButton').click()"/>
 <input type='button' id="myButton" value="Go" onclick="javascript:function1();"/>
  </form>
