@@ -24,7 +24,7 @@ Enter your secret word in the form to retrieve your badge. The badge should appe
 <table width=700><tr><td>		
 <hr size=1 noshade width='300'>
 <center>
-	<form name="form1" onSubmit="javascript:function1();">
+	<form name="form1" onSubmit="event.preventDefault(); function1();">
 secret word: <input type="text" id="box1" name="box1" onkeydown = "if (event.keyCode == 13) document.getElementById('myButton').click()"/>
 <input type='button' id="myButton" value="Go" onclick="javascript:function1();"/>
  </form>
